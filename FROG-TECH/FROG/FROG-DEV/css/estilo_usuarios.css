@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    z-index: 1;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 270px; /* Remover margem à esquerda */
+    margin-right: auto; /* Cria margem à direita automática */
+    height: 60px; /* Ajuste a altura da div da logo */
+}
+.logo img {
+max-height: 180%; /* Ajuste a altura máxima da imagem */
+height: auto; /* Mantém a proporção da imagem */
+width: auto; /* Mantém a proporção da imagem */
+margin-top: -20px; /* Ajuste o valor conforme necessário */
+}
+
+
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start; /* Alinhamento inicial à esquerda */
+    margin-top: 1em; /* Para dar espaço entre o header e o conteúdo */
+}
+.sidebar {
+width: 250px;
+background-color: #2e7d32;
+padding: 1em;
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+z-index: 2;
+color: white;
+margin-left: -4px; /* Ajuste este valor conforme necessário para mover a sidebar inteira para a esquerda */
+}
+
+
+.sidebar img {
+max-width: 100%; /* Ajusta para que a imagem não ultrapasse a largura da sidebar */
+height: auto; /* Mantém a proporção da imagem */
+width: 80px; /* Ajuste a largura conforme necessário */
+margin-bottom: 1em; /* Espaçamento abaixo da imagem, se necessário */
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+footer {
+    text-align: right;
+    padding: 1em;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    width: 70%;
+    color: black;
+    margin-top: auto; /* Isso empurra o footer para baixo */
+}
+
+/* Estilo geral para a tabela */
+table {
+    width: 80%; /* Reduzido para 70% da largura da tela */
+    margin-left: 295px; /* Alinha a tabela à esquerda */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo para cabeçalhos da tabela */
+th {
+    padding: 10px;
+    text-align: left;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    font-size: 14px; /* Fonte ajustada para menor */
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estilo para as células da tabela */
+td {
+    padding: 8px; /* Reduzido o padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px; /* Fonte ajustada para menor */
+    color: #333;
+}
+
+/* Estilo para as linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo ao passar o mouse sobre as linhas */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para a tabela vazia */
+td[colspan="6"] {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    padding: 15px;
+}
+
+/* Responsividade - ajuste para telas menores */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Para telas menores, a tabela ocupa 100% da largura */
+        margin: 0; /* Remove qualquer margem */
+    }
+    th, td {
+        font-size: 10px; /* Fonte ainda menor para telas pequenas */
+        padding: 6px;
+    }
+}

@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 100px; 
+    margin-bottom: 20px;
+}
+
+
+.checkout-info {
+    max-width: 500px;
+    width: 80%;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; 
+    text-align: center; 
+    
+}
+
+.checkout-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.checkout-info strong {
+    color: #28a745; 
+}
+
+
+form {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form button[type="submit"] {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+footer {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    bottom: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 12px 25px; 
+    font-size: 1.2rem; 
+    background-color: #28a745;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05); 
+}
+
+button:focus {
+    outline: none; 
+}
